@@ -1,11 +1,14 @@
+import PropTypes, { number } from "prop-types"
 
-const CounterApp = (value)=>{
+export const CounterApp = ({value})=>{
     return(
         <>
             <h1>CounterApp</h1>
-            <h2> { value } </h2>
+            <h2>{value}</h2>
         </>
     )
 }
 
-export default CounterApp
+CounterApp.propTypes = {
+    value: number.isRequired
+}
