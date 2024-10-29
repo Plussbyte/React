@@ -1,12 +1,12 @@
 import React from "react"
 import ReactDOM from "react-dom/client"
 
-import { CounterApp } from "./counterApp"
+import { UseStateButton } from "./04-useState-button"
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 
     <React.StrictMode>
-        <CounterApp value={123}/>
+        <UseStateButton value={0} />
     </React.StrictMode>
 
 )
